@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>25</integer>
+	<integer>27</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -101,7 +101,7 @@
 							<real>1</real>
 							<real>1</real>
 							<false/>
-							<integer>1</integer>
+							<integer>0</integer>
 						</array>
 					</dict>
 					<dict>
@@ -129,70 +129,6 @@
 						</array>
 					</dict>
 				</array>
-			</dict>
-			<dict>
-				<key>UUID</key>
-				<integer>5</integer>
-				<key>baseClass</key>
-				<string>CCBFile</string>
-				<key>children</key>
-				<array/>
-				<key>customClass</key>
-				<string></string>
-				<key>displayName</key>
-				<string>CCBFile</string>
-				<key>memberVarAssignmentName</key>
-				<string>_grid</string>
-				<key>memberVarAssignmentType</key>
-				<integer>1</integer>
-				<key>properties</key>
-				<array>
-					<dict>
-						<key>name</key>
-						<string>name</string>
-						<key>type</key>
-						<string>StringSimple</string>
-						<key>value</key>
-						<string></string>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>position</string>
-						<key>type</key>
-						<string>Position</string>
-						<key>value</key>
-						<array>
-							<real>10</real>
-							<real>0.5</real>
-							<integer>2</integer>
-							<integer>0</integer>
-							<integer>2</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>scale</string>
-						<key>type</key>
-						<string>ScaleLock</string>
-						<key>value</key>
-						<array>
-							<real>1</real>
-							<real>1</real>
-							<false/>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>ccbFile</string>
-						<key>type</key>
-						<string>CCBFile</string>
-						<key>value</key>
-						<string>ccbResources/Grid.ccb</string>
-					</dict>
-				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -279,7 +215,7 @@
 										<key>value</key>
 										<array>
 											<string></string>
-											<string>ccbResources/microscope.png</string>
+											<string>GameOfLifeAssets/Assets/microscope.png</string>
 										</array>
 									</dict>
 									<dict>
@@ -316,7 +252,7 @@
 										<key>displayName</key>
 										<string>CCLabelTTF</string>
 										<key>memberVarAssignmentName</key>
-										<string>_populationLabel</string>
+										<string></string>
 										<key>memberVarAssignmentType</key>
 										<integer>1</integer>
 										<key>properties</key>
@@ -336,8 +272,8 @@
 												<string>Position</string>
 												<key>value</key>
 												<array>
-													<real>44</real>
-													<real>70</real>
+													<real>45</real>
+													<real>73</real>
 													<integer>0</integer>
 													<integer>0</integer>
 													<integer>0</integer>
@@ -523,7 +459,7 @@
 										<key>displayName</key>
 										<string>CCLabelTTF</string>
 										<key>memberVarAssignmentName</key>
-										<string></string>
+										<string>_generationLabel</string>
 										<key>memberVarAssignmentType</key>
 										<integer>1</integer>
 										<key>properties</key>
@@ -581,7 +517,7 @@
 												<string>Text</string>
 												<key>value</key>
 												<array>
-													<string>Sample Text</string>
+													<string></string>
 													<false/>
 												</array>
 											</dict>
@@ -788,7 +724,7 @@
 												<string>Text</string>
 												<key>value</key>
 												<array>
-													<string>Sample Text</string>
+													<string>Generation</string>
 													<false/>
 												</array>
 											</dict>
@@ -937,7 +873,7 @@
 										<key>displayName</key>
 										<string>CCLabelTTF</string>
 										<key>memberVarAssignmentName</key>
-										<string>_generationLabel</string>
+										<string>_populationLabel</string>
 										<key>memberVarAssignmentType</key>
 										<integer>1</integer>
 										<key>properties</key>
@@ -958,7 +894,7 @@
 												<key>value</key>
 												<array>
 													<real>40</real>
-													<real>53</real>
+													<real>54</real>
 													<integer>0</integer>
 													<integer>0</integer>
 													<integer>0</integer>
@@ -995,7 +931,7 @@
 												<string>Text</string>
 												<key>value</key>
 												<array>
-													<string>Sample Text</string>
+													<string></string>
 													<false/>
 												</array>
 											</dict>
@@ -1241,8 +1177,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>0.50561797618865967</real>
-									<real>0.36562499403953552</real>
+									<real>0.516853928565979</real>
+									<real>0.39375001192092896</real>
 									<integer>0</integer>
 									<integer>2</integer>
 									<integer>2</integer>
@@ -1325,11 +1261,11 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>57.000030517578125</real>
-									<real>262.99996948242188</real>
+									<real>0.522472083568573</real>
+									<real>0.8156248927116394</real>
 									<integer>0</integer>
-									<integer>0</integer>
-									<integer>0</integer>
+									<integer>2</integer>
+									<integer>2</integer>
 								</array>
 							</dict>
 							<dict>
@@ -1339,7 +1275,7 @@
 								<string>Point</string>
 								<key>value</key>
 								<array>
-									<real>0.0061386651359498501</real>
+									<real>0.5</real>
 									<real>-0.44980469346046448</real>
 								</array>
 							</dict>
@@ -1420,7 +1356,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>ccbResources/play.png</string>
+									<string>GameOfLifeAssets/Buttons/play.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -1431,7 +1367,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>ccbResources/Assets/play-pressed.png</string>
+									<string>GameOfLifeAssets/Buttons/play-pressed.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -1651,11 +1587,11 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>92</real>
-									<real>292.99996948242188</real>
+									<real>0.516853928565979</real>
+									<real>0.91562491655349731</real>
 									<integer>0</integer>
-									<integer>0</integer>
-									<integer>0</integer>
+									<integer>2</integer>
+									<integer>2</integer>
 								</array>
 							</dict>
 							<dict>
@@ -1746,7 +1682,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>ccbResources/Assets/pause.png</string>
+									<string>GameOfLifeAssets/Buttons/pause.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -2016,6 +1952,70 @@
 						</array>
 					</dict>
 				</array>
+			</dict>
+			<dict>
+				<key>UUID</key>
+				<integer>25</integer>
+				<key>baseClass</key>
+				<string>CCBFile</string>
+				<key>children</key>
+				<array/>
+				<key>customClass</key>
+				<string></string>
+				<key>displayName</key>
+				<string>Grid</string>
+				<key>memberVarAssignmentName</key>
+				<string>_grid</string>
+				<key>memberVarAssignmentType</key>
+				<integer>1</integer>
+				<key>properties</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>name</string>
+						<key>type</key>
+						<string>StringSimple</string>
+						<key>value</key>
+						<string></string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>position</string>
+						<key>type</key>
+						<string>Position</string>
+						<key>value</key>
+						<array>
+							<real>10</real>
+							<real>0.5</real>
+							<integer>2</integer>
+							<integer>0</integer>
+							<integer>2</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>scale</string>
+						<key>type</key>
+						<string>ScaleLock</string>
+						<key>value</key>
+						<array>
+							<real>1</real>
+							<real>1</real>
+							<false/>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>ccbFile</string>
+						<key>type</key>
+						<string>CCBFile</string>
+						<key>value</key>
+						<string>Grid.ccb</string>
+					</dict>
+				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
