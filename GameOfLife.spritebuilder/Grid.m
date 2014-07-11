@@ -126,6 +126,11 @@ static const int GRID_COLUMNS = 10;
     }
     return isIndexValid;
 }
+
+-(void)updateCreatures
+{
+    
+}
     
 
 @end
