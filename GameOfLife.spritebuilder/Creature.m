@@ -11,7 +11,7 @@
 @implementation Creature
 
 -(instancetype)initCreature {
-    self = [super initWithImageNamed:@"GameofLifeAssets/Assets/bubble.png"];
+    self = [super initWithImageNamed:@"GameOfLifeTemplate-Spritebuilder/GameOfLife.spritebuilder/GameOfLifeAssets/Assets"];
     
     if(self){
         self.isAlive = NO;
