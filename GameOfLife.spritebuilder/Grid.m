@@ -23,8 +23,30 @@ static const int GRID_COLUMNS = 10;
     [super onEnter];
     [self setupGrid];
     
-    self.userInteractionEnabled = YES;
+    self.userInteractionEnabled = YES;  //this enables touchBegan to be used
 
+}
+
+-(void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
+{
+    //get the coordinates of the touch
+    CGPoint touchLocation = [touch locationInNode:self];
+    
+    //get the creature at the touched location
+    Creature *creature = [self creatureForTouchPosition:touchLocation];  //need to create this method
+    
+    //invert the creature's alive state
+    creature.isAlive = !creature.isAlive;
+}
+
+-(Creature *)creatureForTouchPosition:(CGPoint *)touchPosition
+{
+    int row = int(touchPosition.y/_cellHeight);
+    
+    int column = int(touchPosition.x/_cellWidth);
+
+    
+    
 }
 
 -(void)setupGrid
