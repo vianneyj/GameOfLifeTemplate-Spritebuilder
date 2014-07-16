@@ -9,10 +9,10 @@
 #import "Grid.h"
 #import "Creature.h"
 
-static const int GRID_ROWS = 8;
+static const int GRID_ROWS = 8;         //these are public vars
 static const int GRID_COLUMNS = 10;
 
-@implementation Grid {
+@implementation Grid {          //why are these private? (ie used in this impl only)
     NSMutableArray *_gridArray;
     float _cellWidth;
     float _cellHeight;
@@ -33,6 +33,7 @@ static const int GRID_COLUMNS = 10;
     _cellWidth = self.contentSize.width / GRID_COLUMNS;
     _cellHeight = self.contentSize.height / GRID_ROWS;
     
+    
     float x = 0;
     float y = 0;
     
@@ -42,7 +43,7 @@ static const int GRID_COLUMNS = 10;
     //initialize the Creatures with a 2D array
     for(int i=0; i<GRID_ROWS; i++) {
         _gridArray[i] = [NSMutableArray array];
-        x=0;
+        x = 0;
         
         for (int j =0; j<GRID_COLUMNS; j++) {
             Creature *creature = [[Creature alloc] initCreature];
