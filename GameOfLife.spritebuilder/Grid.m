@@ -39,13 +39,15 @@ static const int GRID_COLUMNS = 10;
     creature.isAlive = !creature.isAlive;
 }
 
--(Creature *)creatureForTouchPosition:(CGPoint *)touchPosition
+-(Creature *)creatureForTouchPosition:(CGPoint)touchPosition
 {
-    int row = int(touchPosition.y/_cellHeight);
+    int row = touchPosition.y/_cellHeight;
     
-    int column = int(touchPosition.x/_cellWidth);
+    int column = touchPosition.x/_cellWidth;
+    
+    
 
-    
+    return _gridArray[row][column];
     
 }
 
