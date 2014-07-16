@@ -29,11 +29,11 @@ static const int GRID_COLUMNS = 10;
 
 -(void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
 {
-    //get the coordinates of the touch
+    //get the coordinates of the touch this is NOT a pointer!
     CGPoint touchLocation = [touch locationInNode:self];
     
     //get the creature at the touched location
-    Creature *creature = [self creatureForTouchPosition:touchLocation];  //need to create this method
+    Creature *creature = [self creatureForTouchPosition:touchLocation];  //need to create this method (created below)
     
     //invert the creature's alive state
     creature.isAlive = !creature.isAlive;
@@ -154,6 +154,22 @@ static const int GRID_COLUMNS = 10;
 
 -(void)updateCreatures
 {
+    for(int i = 0; i< [_gridArray count]; i++)
+    {
+        for(j=0; j< [_gridArray[i] count]; j++)
+        {
+            Creature *currentCreature = _gridArray[i][j];
+            
+            if (currentCreature.livingNeighbors == 3)
+            {
+                currentCreature.isAlive = true;
+            }
+            else if(currentCreature.livingNeighbors <= 1|| currentCreature.livingNeighbors >= 4)
+            {
+                currentCreature.isAlive = false;
+            }
+        }
+    }
     
 }
     
